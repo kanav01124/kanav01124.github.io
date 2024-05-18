@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia App</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+
+<body>
+    <div id="start-screen" class="screen">
+        <div id="difficulty-selection">
+            <label for="difficulty">Select Difficulty:</label>
+            <select id="difficulty">
+                <option value="Easy">Easy</option>
+                <option value="Medium">Medium</option>
+                <option value="Hard">Hard</option>
+            </select>
+        </div>
+        <div id="num-questions-selection">
+            <label for="num-questions">Number of Questions:</label>
+            <input type="number" id="num-questions" min="1" max="50" value="10">
+        </div>
+        <button id="start-button" class="start-btn">Start</button>
+    </div>
+
+    <div id="trivia-screen" class="screen hide">
+        <div id="trivia-container">
+            <div id="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            <div id="tags-container">
+                <span id="question-category" class="tag">General</span>
+                <span id="question-difficulty" class="tag">Easy</span>
+            </div>
+            <div id="question-text">Question text</div>
+            <div id="answer-buttons" class="btn-container">
+                <!-- Answer buttons will be inserted here dynamically -->
+            </div>
+            <div id="feedback" class="hide"></div>
+            <div class="navigation-buttons">
+                <button id="prev-button" class="nav-btn">Previous</button>
+                <button id="next-button" class="nav-btn">Next</button>
+            </div>
+        </div>
+        <br>
+        <div id="trivia-container">
+            <!-- Other elements -->
+            <div id="score">Score: 0</div>
+        </div>
+        
+    </div>
+
+
+    <script src="script3.js"></script>
+</body>
+
+</html>

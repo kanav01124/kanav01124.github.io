@@ -1,0 +1,153 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hide {
+    display: none;
+}
+
+.start-btn {
+    background-color: #ffd700;
+    color: #fff;
+    border: none;
+    padding: 20px 60px;
+    font-size: 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.start-btn:hover {
+    transform: scale(1.1);
+    background-color: #ffbf00;
+}
+
+
+#trivia-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px;
+    position: relative;
+}
+
+#progress-bar-container {
+    width: 100%;
+    background-color: #3c3c4e;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#progress-bar {
+    height: 10px;
+    background-color: #ffd700;
+    width: 0%;
+    transition: width 0.3s;
+}
+
+#tags-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+
+.tag {
+    background-color: #3c3c4e;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.btn-container {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ffd700;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+}
+
+#feedback {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.correct {
+    color: #4caf50;
+}
+
+.incorrect {
+    color: #f44336;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-btn {
+    background-color: #ffd700;
+    margin-right:10px;
+    margin-top: 20px;
+    color: #fff;
+    border: thin;
+    border-color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: thick;
+    transition: background-color 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: #ffbf00;
+}
+
+#difficulty-selection {
+    margin-bottom: 10px; 
+  }
+  
+  #num-questions-selection {
+    margin-bottom: 20px; 
+  }
+  
+  label {
+    display: block; 
+    margin-bottom: 5px; 
+  }
+  
+  select, input[type="number"] {
+    width: 100%; 
+    padding: 8px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    font-size: 16px; 
+    margin-bottom: 10px; 
+  }
+  
